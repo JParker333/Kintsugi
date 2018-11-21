@@ -1,0 +1,291 @@
+/* .list-group-item {
+	line-height: 2.5;
+} */
+body {
+	width: 75%;
+	margin: 0px auto; 
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+	background-color: #DDC9AF;
+ }
+ 
+ header {
+	 height: 100px;
+ }
+ 
+ nav {
+	 background-color: #4994A3;
+ }
+ 
+ header > nav {
+	 height: 100%;
+ }
+ 
+ #logo-icon {
+	margin-left: 50px;
+	margin-top: 20px;
+ }
+ 
+ #logo {
+	 margin-left: 50px;
+	 margin-top: 20px;
+	 font-family: 'Unica One', cursive;
+	 font-size: 60px;
+ }
+ 
+ .links {
+	 font-size: 30px;
+ }
+ 
+ #head-nav-links {
+	 margin-right: 50px;
+	 margin-top: 20px;
+	 font-family: 'Unica One';
+ }
+
+ .sugi {
+	height: 260px;
+	width: 340px;
+ }
+ 
+ .descrip {
+	 background-color: #FFDA7F;
+	 height: 260px;
+ }
+ 
+ .explain {
+	 font-size: 20px;
+	 font-family: 'Titan One', cursive;
+	 color:#625D52;
+	 margin-top: 30px;
+	 margin-left: 40px;
+ }
+
+ .table-div-holder {
+	background-color: #603a3f;
+	justify-content: space-around;
+	color: #DDC9AF;
+	margin-bottom: 20px;
+	
+}
+ 
+ .card-div-holder {
+	 background-color: #603a3f;
+	 color: #DDC9AF;
+	 margin-bottom: 20px;
+	 height: 1900px;
+	 justify-content: space-around;
+	 padding-left: 80px;
+	 
+ }
+ 
+ .quiz-div-holder {
+	 background-color: #603a3f;
+	 color: #DDC9AF;
+	 margin-top: 10px;
+ }
+
+ div#test {
+	border: #000 1px solid;
+	padding: 10px 40px 40px 40px;
+}
+ 
+ .container {
+	 background-color: #603A3F;
+	 height: 2000px;
+	 width: 100%;
+ }
+
+ #home {
+	font-family: 'Unica One';
+	font-size: 40px;
+ }
+
+li:hover {background-color: #625d52;}
+ 
+ .avatar {
+	 background-color: #FFDA7F;
+	 height: 300px;
+	 margin-top: 10px;
+ }
+ 
+ .bio {
+	 background-color: #FFDA7F;
+	 height: 300px;
+	 margin-top: 10px;
+ }
+
+ .biotext {
+	font-family: 'Titan One', cursive;
+	color: #625D52;
+	font-size: 20px;
+	margin-bottom: 20px;
+ }
+ 
+ .imgavatar {
+	 width: 200px;
+	 height: 300px;
+	 margin-left: 50px;
+ }
+ 
+ .badges-container {
+	 width: 100%;
+	 margin-top: 30px;
+	 height:2000px;
+ }
+ 
+ .badgeimg {
+	 height: 200px;
+	 width: 200px;
+ }
+ 
+ .imgavatar {
+	 height: 300px;
+	 width: 200px;
+ }
+ 
+ .badges {
+	 color: #DDC9AF;
+	 background-color: #625D52;
+	 font-family: 'Permanent Marker', cursive;
+	 font-size: 20px;
+	 width: 200px;
+ }
+
+ button {
+	 background-color: #625d52;
+ }
+
+ /*style for flash cards*/
+ .flip3D {
+	width: 240px;
+	height: 200px;
+	margin: 10px;
+	float: left;
+	}
+	
+	.flip3D > .front{
+	   position: absolute;
+	   -webkit-transform: perspective(600px) rotateY( 0deg );
+	   transform: perspective(600px) rotateY( 0deg );
+	   background: #FFDA7F; width: 240px; height: 200px; border-radius: 7px;
+	   backface-visibility: hidden;
+	   transition: -webkit-transform .5s linear 0s;
+		 transition: transform .5s linear 0s;
+		 justify-content: space-around;
+	}
+	
+	.flip3D > .back{
+	   position: absolute;
+	   -webkit-transform: perspective(600px) rotateY( 180deg );
+		 transform: perspective(600px) rotateY( 180deg );
+		 justify-content: space-around;
+	   background: #625d52; width: 240px; height: 200px; border-radius: 7px;
+	   backface-visibility: hidden;
+	   transition: -webkit-transform .5s linear 0s;
+		 transition: transform .5s linear 0s;
+		 justify-content: space-around;
+	}
+	
+	.flip3D:hover > .front{
+	   -webkit-transform: perspective(600px) rotateY( -180deg );
+		 transform: perspective(600px) rotateY( -180deg );
+		 justify-content: space-around;
+	
+	}
+	
+	.flip3D:hover > .back{
+	   -webkit-transform: perspective(600px) rotateY( 0deg );
+	   transform: perspective(600px) rotateY( 0deg );
+	
+	}
+
+	.front {
+		color: #625d52;
+		height: fit-content;
+		width: fit-content;
+		font-size: 25px;
+		text-align: center;
+		
+	}
+
+	.back {
+		color: white;
+		height: fit-content;
+		width: fit-content;
+		font-size: 25px;
+		text-align: center;
+	}
+
+	#myDynamicTable ul {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.liclass {
+		width:8%;
+		margin: 1%;
+		border: 3px solid grey;
+		border-radius: 10px;
+		text-align: center;
+	}
+	.liclass p{
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+ 
+ @media only screen and (max-width: 1196px) {
+	 .descrip {
+		 height: 300px;
+	 }
+ 
+	 .explain {
+		 font-size: 20px;
+	 }
+
+	 .imgsugi {
+		height: 200px;
+		width: 200px;
+	 }
+
+	 .imgavatar {
+		width: 200px;
+		height: 200px;
+	}
+
+
+ 
+ }
+ 
+ @media only screen and (max-width: 600px) {
+	 .descrip {
+		 height: 300px;
+	 }
+ 
+	 .explain {
+		 font-size: 15px;
+	 }
+ 
+	 .imgavatar {
+		 height: auto;
+		 width: 100%;
+
+	 }
+ 
+	 .badgeimg {
+		 height: 50px;
+		 width: 50px;
+	 }
+
+	 .imgsugi {
+		height: 100px;
+		width: 100px;
+	 }
+
+	 #logo {
+		 font-size: 20px;
+	 }
+ }

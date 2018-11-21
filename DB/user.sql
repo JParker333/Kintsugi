@@ -1,0 +1,1 @@
+INSERT INTO UserSchema (user_ID, bio, badges, study_cards) VALUES ("test user","test info for user", 15, "cards");
